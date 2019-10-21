@@ -7,6 +7,8 @@ import time as t
 
 highState = True
 
+GPIO.setmode(GPIO.BCM)
+
 for button in buttons:
     GPIO.setup(button, GPIO.IN)
 
