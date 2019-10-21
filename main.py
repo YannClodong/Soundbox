@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import playsound as p
+import readSound as p
 import loadInfos as l
 import time as t
 
@@ -14,7 +14,7 @@ while True:
     for i in range(len(buttons)):
         button = buttons[i]
         if(GPIO.input(button) == highState):
-            p.playsound(sounds[i])
+            p.read(sounds[i])
         while(GPIO.input(button) == highState):
             print("")
     t.sleep(.1)
