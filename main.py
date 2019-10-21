@@ -5,7 +5,7 @@ import time as t
 
 (buttons, sounds) = l.load()
 
-highState = True
+highState = False
 
 GPIO.setmode(GPIO.BCM)
 
